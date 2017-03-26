@@ -1,0 +1,107 @@
+<resources>
+    <string name="app_name">TaxiApp</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="personalData_title">Meine Daten</string>
+    <string name="hint_prename">Vorname</string>
+    <string name="hint_name">Nachname</string>
+    <string name="hint_phone_prefix">Vorwahl</string>
+    <string name="hint_phonenumber">Telefonnummer</string>
+    <string name="hint_email">abc@example.com</string>
+    <string name="section1_title">Abholort</string>
+    <string name="hint_address_street">Straße</string>
+    <string name="hint_address_housenr">Hnr.</string>
+    <string name="hint_address_zip">PLZ</string>
+    <string name="hint_address_city">Stadt</string>
+    <string name="section2_title">Ziel</string>
+    <string name="section3_title">Zusatzangaben</string>
+    <string name="textView_count_person">Anzahl Personen</string>
+    <string name="editText_count_person">1</string>
+    <string name="texTView_count_cars">Anzahl Wagen</string>
+    <string name="editText_count_cars">1</string>
+    <string name="textView_limited_person">Behindertengerecht</string>
+    <string name="button_ordernow">Jetzt bestellen</string>
+    <string name="button_ordercancel">Abbrechen</string>
+    <string name="button_cancel">Abbrechen</string>
+    <string name="button_OK">OK</string>
+    <string name="textView_orderNow_Alert">Jetzt bestellen?</string>
+    <string name="aDialog_order_success">... erfolgreich übermittelt</string>
+    <string name="aDialog_order_fail">... nicht erfolgreich</string>
+    <string name="aDialog_title_order">Bestellung</string>
+    <string name="aDialog_buttonn_ok">OK</string>
+    <string name="title_activity_order">Taxi Bestellung</string>
+    <string name="title_activity_mainUI">Taxi Stephany</string>
+    <string name="textView_orderTaxi">Taxi bestellen</string>
+    <string name="numberPickerDialog_title_count_cars">Wieviele Wagen?</string>
+    <string name="numberPickerDialog_title_count_person">Wieviele Personen?</string>
+
+    <string name="atLeastXChars">Es müssen mind. %%CharCount%% Zeichen eingegeben werden</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="toast_not_all_required_fields_filled">Es wurden nicht alle benötigten Felder ausgefüllt. Bitte rot markierte Felder noch richtig ausfüllen.</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <!-- own Strings again -->
+    <string name="pref_title_top">Einstellungen</string>
+    <string name="pref_title_sub_debug">Debug</string>
+    <string name="pref_description_debug_settings_enabled">Enable/Disable Debug Mode</string>
+    <string name="pref_title_debug_settings_enabled">Debug Mode</string>
+    <string name="pref_title_expert_section">Expert Settings</string>
+
+</resources>

@@ -1,0 +1,199 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.moltox.taxiapp.MainUiFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|top"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/iv_taxi_1" />
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:theme="@style/AppTheme.ChoiceCards.CardView"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clipToPadding="false"
+                    android:padding="@dimen/padding_choiceCards">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_cc_outerrl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:id="@+id/ll_cc_left_col"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:orientation="vertical"
+                            android:theme="@style/AppTheme.ChoiceCards.InnerLinearLayout">
+
+                            <ImageButton
+                                android:id="@+id/ib_taxi_toOrderActivity"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:background="@android:color/transparent"
+                                android:src="@mipmap/ic_local_taxi_black_48dp" />
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_cc_mid_col"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@id/ll_cc_left_col"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:theme="@style/AppTheme.ChoiceCards.InnerLinearLayout"
+                            tools:ignore="DuplicateIds">
+
+                            <TextView
+                                android:id="@+id/textView_cc_street"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:gravity="center_vertical"
+                                android:text="@string/textView_orderTaxi"
+                                android:theme="@style/AppTheme.ChoiceCards.TextView" />
+
+                            <TextView
+                                android:id="@+id/textView_cc_zipcity"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:theme="@style/AppTheme.ChoiceCards.TextView" />
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/ll_cc_mid_col"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignTop="@+id/ll_cc_mid_col"
+                            android:theme="@style/AppTheme.ChoiceCards.InnerLinearLayout">
+
+                            <ImageButton
+                                android:id="@+id/ib_arrowRight_toOrderActivity"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:theme="@style/AppTheme.ChoiceCards.ImageButton_ArrowRight"
+                                android:layout_centerVertical="true"
+                                android:background="@android:color/transparent"
+                                />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cv_debug_page"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:theme="@style/AppTheme.ChoiceCards.CardView"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clipToPadding="false"
+                    android:padding="@dimen/padding_choiceCards"
+                    >
+
+                    <RelativeLayout
+                        android:id="@+id/rl_cc_outerrl2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:id="@+id/ll_cc_left_col2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:orientation="vertical"
+                            android:theme="@style/AppTheme.ChoiceCards.InnerLinearLayout">
+
+                            <ImageButton
+                                android:id="@+id/imageButton_onTimeOrder"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left|top"
+                                android:background="@android:color/transparent"
+                                android:src="@mipmap/ic_developer_board_black_48dp" />
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_cc_mid_col2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_toRightOf="@+id/ll_cc_left_col2"
+
+                            android:orientation="vertical"
+                            android:theme="@style/AppTheme.ChoiceCards.InnerLinearLayout"
+                            >
+
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignBottom="@+id/ll_cc_mid_col2"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignTop="@+id/ll_cc_mid_col2"
+                            android:theme="@style/AppTheme.ChoiceCards.InnerLinearLayout"
+                            >
+
+                            <ImageButton
+                                android:id="@+id/ib_arrowRight_toOnTimeOrderActivity"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:theme="@style/AppTheme.ChoiceCards.ImageButton_ArrowRight"
+                                android:layout_centerVertical="true"
+                                android:background="@android:color/transparent"
+
+                                />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

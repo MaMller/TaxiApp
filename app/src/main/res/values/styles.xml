@@ -1,0 +1,48 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+
+    <style name="AppTheme.ChoiceCards">
+    </style>
+    <style name="AppTheme.ChoiceCards.CardView">
+        <item name="android:minHeight">100dp</item>
+        <item name="android:background">@color/cardview_light_background</item>
+        <item name="android:clickable">true</item>
+        <item name="android:padding">@dimen/padding_choiceCards</item>
+    </style>
+    <style name="AppTheme.ChoiceCards.InnerLinearLayout">
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:minHeight">0dp</item>
+    </style>
+    <style name="AppTheme.ChoiceCards.TextView">
+        <item name="android:padding">5dp</item>
+        <item name="android:minWidth">150dp</item>
+    </style>
+    <style name="AppTheme.ChoiceCards.ImageButton_ArrowRight">
+        <item name="android:src">@mipmap/ic_keyboard_arrow_right_black_24dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+</resources>
